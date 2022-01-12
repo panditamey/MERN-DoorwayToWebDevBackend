@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 mongoose.connect(
-  "mongodb+srv://amey:<amey>@amey.quiud.mongodb.net/d1?retryWrites=true&w=majority"
+  "mongodb+srv://amey:amey@amey.quiud.mongodb.net/d1?retryWrites=true&w=majority"
 );
 
 app.get("/getUsers", (req, res) => {
