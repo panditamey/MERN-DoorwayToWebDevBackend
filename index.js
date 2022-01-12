@@ -3,6 +3,8 @@ const app = express();
 const mongoose = require("mongoose");
 const UserModel = require("./models/Users");
 
+const port = process.env.PORT || 3001
+
 const cors = require("cors");
 
 app.use(express.json());
@@ -30,6 +32,6 @@ app.post("/createUser", async (req, res) => {
   res.json(user);
 });
 
-app.listen(3001, () => {
+app.listen(port, () => {
   console.log("BOOM SERVER RUNS 🔥🔥🔥🔥");
 });
